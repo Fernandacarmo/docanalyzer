@@ -1,5 +1,5 @@
 # Document Analyzer
-Spring Boot Application to analyze text documents
+Spring Boot Application to analyze text documents.
 
 ## What do you need
 - JDK 11
@@ -27,13 +27,23 @@ Team1 has {user1, user3}. Team2 has {user1, user2}
 
 More details, please check "data.sql" file.
 
+## Database access
+
+H2 database can be accessed via: http://localhost:8080/h2
+
+JDBC URL: jdbc:h2:~/docanalyzer
+
+User Name: h2
+
 ## Endpoints
 
-The Postman collection with all the available endpoints can be found on the application root:
-Document Analyzer.postman_collection.json
+REST controllers: src\main\java\com\visiblethread\docanalyzer\controller
 
+The Postman collection with all the API requests can be found on JSON file:
 
+- Document Analyzer.postman_collection.json
 
+Please import this file to your Postman.
 
 ### Reference Documentation
 For further reference, please consider the following sections:
