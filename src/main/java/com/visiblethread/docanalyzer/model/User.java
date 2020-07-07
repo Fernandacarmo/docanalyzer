@@ -2,11 +2,11 @@ package com.visiblethread.docanalyzer.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -28,6 +28,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Data
+@Builder
 @EqualsAndHashCode(exclude = {"teams"})
 @NoArgsConstructor
 @AllArgsConstructor
