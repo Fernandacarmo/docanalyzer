@@ -1,7 +1,7 @@
-package com.visiblethread.docanalyzer.repository;
+package com.company.docanalyzer.repository;
 
-import com.visiblethread.docanalyzer.model.Team;
-import com.visiblethread.docanalyzer.model.User;
+import com.company.docanalyzer.model.Team;
+import com.company.docanalyzer.model.User;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

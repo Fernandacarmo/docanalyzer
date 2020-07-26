@@ -1,4 +1,4 @@
-package com.visiblethread.docanalyzer.exception;
+package com.company.docanalyzer.exception;
 
 public class IncorrectFileException extends Exception {
 

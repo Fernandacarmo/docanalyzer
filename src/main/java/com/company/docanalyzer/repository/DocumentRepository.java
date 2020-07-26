@@ -1,6 +1,6 @@
-package com.visiblethread.docanalyzer.repository;
+package com.company.docanalyzer.repository;
 
-import com.visiblethread.docanalyzer.model.Document;
+import com.company.docanalyzer.model.Document;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

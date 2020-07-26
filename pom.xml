@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <start-class>com.visiblethread.docanalyzer.DocanalyzerApplication</start-class>
+        <start-class>com.company.docanalyzer.DocanalyzerApplication</start-class>
     </properties>
 
     <dependencies>
@@ -105,7 +105,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.1.RELEASE</version>
                 <configuration>
-                    <mainClass>com.visiblethread.docanalyzer.DocanalyzerApplication</mainClass>
+                    <mainClass>com.company.docanalyzer.DocanalyzerApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

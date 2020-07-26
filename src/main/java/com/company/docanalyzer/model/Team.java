@@ -1,4 +1,4 @@
-package com.visiblethread.docanalyzer.model;
+package com.company.docanalyzer.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

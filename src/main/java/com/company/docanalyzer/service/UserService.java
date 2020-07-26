@@ -1,12 +1,13 @@
-package com.visiblethread.docanalyzer.service;
+package com.company.docanalyzer.service;
 
-import com.visiblethread.docanalyzer.exception.UserNotFoundException;
-import com.visiblethread.docanalyzer.model.Document;
-import com.visiblethread.docanalyzer.model.User;
-import com.visiblethread.docanalyzer.repository.UserRepository;
+import com.company.docanalyzer.exception.UserNotFoundException;
+import com.company.docanalyzer.model.Document;
+import com.company.docanalyzer.model.User;
+import com.company.docanalyzer.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
 
 import java.util.Date;
 import java.util.List;
@@ -27,6 +28,8 @@ public class UserService {
     }
 
     public User findByEmail(String email) throws UserNotFoundException {
+        Assert.notNull(email, "email should not be null");
+
         User user =  userRepository.findFirstByEmail(email);
         if (user == null) {
             throw new UserNotFoundException("User not found with email " + email);
@@ -35,6 +38,9 @@ public class UserService {
     }
 
     public List<User> filterUsers(Date fromDate, Date toDate, boolean upload) {
+        Assert.notNull(fromDate, "fromDate should not be null");
+        Assert.notNull(toDate, "toDate should not be null");
+
         List<User> users = userRepository.findAllByDateBefore(toDate);
         List<Document> docs = documentService.getDocumentsByDate(fromDate, toDate);
 

@@ -1,4 +1,4 @@
-package com.visiblethread.docanalyzer.exception;
+package com.company.docanalyzer.exception;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

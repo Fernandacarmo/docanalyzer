@@ -1,9 +1,9 @@
-package com.visiblethread.docanalyzer.service;
+package com.company.docanalyzer.service;
 
-import com.visiblethread.docanalyzer.exception.UserNotFoundException;
-import com.visiblethread.docanalyzer.model.Document;
-import com.visiblethread.docanalyzer.model.User;
-import com.visiblethread.docanalyzer.repository.DocumentRepository;
+import com.company.docanalyzer.exception.UserNotFoundException;
+import com.company.docanalyzer.model.Document;
+import com.company.docanalyzer.model.User;
+import com.company.docanalyzer.repository.DocumentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

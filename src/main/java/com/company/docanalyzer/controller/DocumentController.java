@@ -1,10 +1,10 @@
-package com.visiblethread.docanalyzer.controller;
+package com.company.docanalyzer.controller;
 
+import com.company.docanalyzer.exception.IncorrectFileException;
+import com.company.docanalyzer.model.Document;
 import com.google.common.net.MediaType;
-import com.visiblethread.docanalyzer.exception.IncorrectFileException;
-import com.visiblethread.docanalyzer.exception.UserNotFoundException;
-import com.visiblethread.docanalyzer.model.Document;
-import com.visiblethread.docanalyzer.service.DocumentService;
+import com.company.docanalyzer.exception.UserNotFoundException;
+import com.company.docanalyzer.service.DocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

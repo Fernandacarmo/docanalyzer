@@ -1,8 +1,8 @@
-package com.visiblethread.docanalyzer.controller;
+package com.company.docanalyzer.controller;
 
-import com.visiblethread.docanalyzer.exception.UserNotFoundException;
-import com.visiblethread.docanalyzer.model.User;
-import com.visiblethread.docanalyzer.service.UserService;
+import com.company.docanalyzer.exception.UserNotFoundException;
+import com.company.docanalyzer.model.User;
+import com.company.docanalyzer.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ public class UserController {
 
     @GetMapping(value = "/user/upload")
     public List<User> filterUsers(@RequestParam(value = "fromDate", required = true) Date fromDate,
-                                  @RequestParam(value = "toDate", required = false) Date toDate,
+                                  @RequestParam(value = "toDate", required = true) Date toDate,
                                   @RequestParam(value = "upload", required = false, defaultValue = "true") boolean upload) {
 
         return userService.filterUsers(fromDate, toDate, upload);

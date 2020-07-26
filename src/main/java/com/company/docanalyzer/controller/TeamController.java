@@ -1,8 +1,8 @@
-package com.visiblethread.docanalyzer.controller;
+package com.company.docanalyzer.controller;
 
-import com.visiblethread.docanalyzer.model.Document;
-import com.visiblethread.docanalyzer.model.Team;
-import com.visiblethread.docanalyzer.service.TeamService;
+import com.company.docanalyzer.model.Document;
+import com.company.docanalyzer.model.Team;
+import com.company.docanalyzer.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

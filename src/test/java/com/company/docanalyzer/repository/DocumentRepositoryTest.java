@@ -1,6 +1,6 @@
-package com.visiblethread.docanalyzer.repository;
+package com.company.docanalyzer.repository;
 
-import com.visiblethread.docanalyzer.model.Document;
+import com.company.docanalyzer.model.Document;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
